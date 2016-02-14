@@ -3,17 +3,12 @@ package tankInfo;
 public class printTankInfo {
 
 	public static void main(String[] args) {
-		Tank destroyer = new Tank();
-		destroyer.color = "red";
-		destroyer.crew = 2;
-		destroyer.maxSpeed = 250;
-		
-		printTankInfo(destroyer);
+		printTankInfo("red", 2, 120);
 	}
 	
-	public static void printTankInfo(Tank tank) {
+	public static void printTankInfo(String color, int crew, int maxSpeed) {
 		System.out.print("Tank properties: ");
-		System.out.print("color " + tank.color + ", crew " + tank.crew + ", maxSpeed " + tank.maxSpeed);
+		System.out.print("color " + color + ", crew " + crew + ", maxSpeed " + maxSpeed);
 		
 	}
 
